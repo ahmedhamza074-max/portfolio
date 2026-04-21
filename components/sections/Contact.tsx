@@ -1,5 +1,5 @@
 import { SectionLabel, StatusBadge, AnimateIn } from "@/components/ui";
-import { contactItems, type ContactItem } from "@/lib/data";
+import { contactItems, heroDetails, type ContactItem } from "@/lib/data";
 
 // ── Icons ────────────────────────────────────────────────────────────────────
 function EmailIcon() {
@@ -53,7 +53,7 @@ export function Contact() {
       <AnimateIn>
         <SectionLabel>Contact</SectionLabel>
         <StatusBadge className="mb-8 w-fit">
-          Open to work — relocating to Germany
+          {heroDetails.statusLabel}
         </StatusBadge>
       </AnimateIn>
 

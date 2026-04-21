@@ -1,5 +1,12 @@
 // ─── Types ───────────────────────────────────────────────────────────────────
 
+export interface HeroDetails {
+  statusLabel: string;
+  name: string;
+  title: string;
+  description: string;
+  subText: string;
+}
 export interface Skill {
   label: string;
   color?: string;
@@ -41,6 +48,14 @@ export interface ContactItem {
 }
 
 // ─── Data ────────────────────────────────────────────────────────────────────
+
+export const heroDetails: HeroDetails = {
+  statusLabel: "Available for opportunities in Germany",
+  name: "Hamza Ahmed",
+  title: "CTO | Full Stack Developer",
+  description: "10+ years building scalable web applications with React, Node.js and modern cloud infrastructure. AWS Certified. Based in Pakistan —",
+  subText: "relocating to Germany."
+}
 
 export const skills: Skill[] = [
   {
@@ -255,8 +270,8 @@ export const projects: Project[] = [
   {
     name: "BloomingBox",
     description:
-      "At BloomingBox, I worked as a Full-Stack Developer where I built and scaled core eCommerce features using Next.js, React, and Node.js, supporting thousands of monthly users while improving platform stability. I enhanced frontend performance, reducing page load times by 30–40%, which contributed to better SEO rankings and increased user engagement. I developed and optimized product listings, search, and filtering systems, driving a 15–25% increase in conversion rates. I also integrated third-party services such as payment gateways, CMS, and search tools, reducing manual processes and improving operational efficiency by around 40%. Additionally, I designed and implemented APIs for order and inventory management to enable real-time data synchronization, collaborated closely with cross-functional teams to deliver high-quality user experiences that reduced bounce rates by over 20%, and improved overall code quality and deployment workflows, decreasing production issues by approximately 30%.",
-    badge: "+20% user engagement",
+      "At BloomingBox, I worked as a Full-Stack Developer where I built and scaled core eCommerce features using Next.js, React, and Node.js, supporting thousands of monthly users while improving platform stability. I enhanced frontend performance, reducing page load times by 30–40%, which contributed to better SEO rankings and increased user engagement.",
+    badge: "+30-40% SEO optimization",
     badgeColor: "amber",
     tags: [
       "Next.js",
@@ -300,7 +315,7 @@ export const projects: Project[] = [
 
 export const stats = [
   { value: "10+", label: "Years experience" },
-  { value: "3000+", label: "Toptal hours" },
+  { value: "5000+", label: "Toptal hours" },
   { value: "$500K", label: "Revenue generated" },
   { value: "98%", label: "On-time delivery" },
 ];

@@ -7,7 +7,7 @@ export function Footer() {
           © {year} Hamza Ahmed. All rights reserved.
         </p>
         <p className="font-mono text-xs text-subtle">
-          Built with Next.js · TailwindCSS
+          Built with Love · Next.js · TailwindCSS
         </p>
       </div>
     </footer>

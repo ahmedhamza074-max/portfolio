@@ -13,7 +13,7 @@ export function Certifications() {
     <section className="pb-20">
       <AnimateIn>
         <SectionLabel>Certification</SectionLabel>
-        <div className="bg-card border border-border rounded-xl p-6 flex items-center gap-5 hover:border-accent/20 hover:-translate-y-0.5 transition-all duration-200 group">
+        <a href="https://www.credly.com/badges/fb21dffe-77d5-4f73-ac68-b8a096299fce" target="_blank"><div className="bg-card border border-border rounded-xl p-6 flex items-center gap-5 hover:border-accent/20 hover:-translate-y-0.5 transition-all duration-200 group">
           {/* Icon */}
           <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 bg-[#ff990015] border border-[#ff990033] group-hover:border-[#ff990055] transition-colors">
             <AWSIcon />
@@ -34,7 +34,7 @@ export function Certifications() {
             </svg>
             <span className="text-green-400 text-xs font-mono font-medium">Verified</span>
           </div>
-        </div>
+        </div></a>
       </AnimateIn>
     </section>
   );
