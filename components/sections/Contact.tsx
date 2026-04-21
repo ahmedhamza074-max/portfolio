@@ -2,7 +2,7 @@ import { SectionLabel, StatusBadge, AnimateIn } from "@/components/ui";
 import { contactItems, heroDetails, type ContactItem } from "@/lib/data";
 
 // ── Icons ────────────────────────────────────────────────────────────────────
-function EmailIcon() {
+export function EmailIcon() {
   return (
     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}

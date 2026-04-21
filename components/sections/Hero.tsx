@@ -2,6 +2,7 @@
 
 import { StatusBadge, Button, AnimateIn } from "@/components/ui";
 import { stats, heroDetails } from "@/lib/data";
+import { EmailIcon } from "./Contact";
 
 // ── Icons ────────────────────────────────────────────────────────────────────
 function FileIcon() {
@@ -83,7 +84,7 @@ export function Hero() {
         <div className="flex flex-wrap gap-3 mb-14">
           <a href={heroDetails.contactMeHref}>
             <Button variant="primary">
-              <FileIcon />
+              <EmailIcon />
               Contact Me
             </Button>
           </a>
