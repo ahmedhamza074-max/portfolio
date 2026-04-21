@@ -56,7 +56,7 @@ export const heroDetails: HeroDetails = {
   title: "CTO | Full Stack Developer",
   description: "10+ years building scalable web applications with React, Node.js and modern cloud infrastructure. AWS Certified. Based in Pakistan —",
   subText: "relocating to Germany.",
-  contactMeHref: "mailto:ahmed.hamza274@gmail.com"
+  contactMeHref: "mailto:ahmed.hamza074@gmail.com"
 }
 
 export const skills: Skill[] = [
@@ -325,8 +325,8 @@ export const stats = [
 export const contactItems: ContactItem[] = [
   {
     label: "Email",
-    value: "ahmed.hamza274@gmail.com",
-    href: "mailto:ahmed.hamza274@gmail.com",
+    value: "ahmed.hamza074@gmail.com",
+    href: "mailto:ahmed.hamza074@gmail.com",
     icon: "email",
   },
   {
