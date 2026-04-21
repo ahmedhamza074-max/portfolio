@@ -81,7 +81,7 @@ export function Hero() {
       {/* CTA Buttons */}
       <AnimateIn delay={240}>
         <div className="flex flex-wrap gap-3 mb-14">
-          <a href="mailto:your@email.com">
+          <a href={heroDetails.contactMeHref}>
             <Button variant="primary">
               <FileIcon />
               Contact Me

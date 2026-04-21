@@ -6,6 +6,7 @@ export interface HeroDetails {
   title: string;
   description: string;
   subText: string;
+  contactMeHref: string;
 }
 export interface Skill {
   label: string;
@@ -54,7 +55,8 @@ export const heroDetails: HeroDetails = {
   name: "Hamza Ahmed",
   title: "CTO | Full Stack Developer",
   description: "10+ years building scalable web applications with React, Node.js and modern cloud infrastructure. AWS Certified. Based in Pakistan —",
-  subText: "relocating to Germany."
+  subText: "relocating to Germany.",
+  contactMeHref: "mailto:ahmed.hamza274@gmail.com"
 }
 
 export const skills: Skill[] = [
