@@ -331,20 +331,20 @@ export const contactItems: ContactItem[] = [
   },
   {
     label: "Phone",
-    value: "+923335085243",
-    href: "tel:+923335085243",
+    value: "+923326065243",
+    href: "tel:+923326065243",
     icon: "phone",
   },
   {
     label: "LinkedIn",
     value: "Hamza-ahmed",
-    href: "https://linkedin.com/in/Hamza-ahmed",
+    href: "https://www.linkedin.com/in/khan-hamza-ahmed/",
     icon: "linkedin",
   },
   {
     label: "Toptal",
     value: "toptal.com/resume/hamza",
-    href: "https://toptal.com/resume/hamza",
+    href: "https://talent.toptal.com/resume/developers/hamza-ahmed",
     icon: "globe",
   },
 ];
