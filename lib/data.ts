@@ -53,9 +53,9 @@ export interface ContactItem {
 export const heroDetails: HeroDetails = {
   statusLabel: "Available for opportunities in Germany",
   name: "Hamza Ahmed",
-  title: "CTO | Full Stack Developer",
+  title: "Senior Full Stack Developer",
   description: "10+ years building scalable web applications with React, Node.js and modern cloud infrastructure. AWS Certified. Based in Pakistan —",
-  subText: "relocating to Germany.",
+  subText: "relocated to Germany.",
   contactMeHref: "mailto:ahmed.hamza074@gmail.com"
 }
 
