@@ -1,4 +1,4 @@
-import { SectionLabel, AnimateIn } from "@/components/ui";
+import { SectionLabel, AnimateIn, ToptalBadge } from "@/components/ui";
 
 function AWSIcon() {
   return (
@@ -12,8 +12,9 @@ export function Certifications() {
   return (
     <section className="pb-20">
       <AnimateIn>
-        <SectionLabel>Certification</SectionLabel>
-        <a href="https://www.credly.com/badges/fb21dffe-77d5-4f73-ac68-b8a096299fce" target="_blank"><div className="bg-card border border-border rounded-xl p-6 flex items-center gap-5 hover:border-accent/20 hover:-translate-y-0.5 transition-all duration-200 group">
+        <SectionLabel>Credentials</SectionLabel>
+        <div className="flex flex-col sm:flex-row items-center gap-6">
+        <a className="block w-full sm:flex-1" href="https://www.credly.com/badges/fb21dffe-77d5-4f73-ac68-b8a096299fce" target="_blank"><div className="bg-card border border-border rounded-xl p-6 flex items-center gap-5 hover:border-accent/20 hover:-translate-y-0.5 transition-all duration-200 group">
           {/* Icon */}
           <div className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 bg-[#ff990015] border border-[#ff990033] group-hover:border-[#ff990055] transition-colors">
             <AWSIcon />
@@ -35,6 +36,8 @@ export function Certifications() {
             <span className="text-green-400 text-xs font-mono font-medium">Verified</span>
           </div>
         </div></a>
+        <ToptalBadge className="shrink-0" />
+        </div>
       </AnimateIn>
     </section>
   );

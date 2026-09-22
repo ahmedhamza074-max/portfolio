@@ -46,6 +46,8 @@ export interface ContactItem {
   value: string;
   href: string;
   icon: "email" | "phone" | "linkedin" | "globe";
+  /** Decorative country flag; the label carries the country name for screen readers. */
+  flag?: string;
 }
 
 // ─── Data ────────────────────────────────────────────────────────────────────
@@ -91,6 +93,12 @@ export const skills: Skill[] = [
     bgColor: "#07162e",
   },
   {
+    label: "Claude API",
+    color: "#d97757",
+    borderColor: "#d9775733",
+    bgColor: "#1c0f08",
+  },
+  {
     label: "AWS",
     color: "#ff9900",
     borderColor: "#ff990033",
@@ -113,6 +121,18 @@ export const skills: Skill[] = [
     color: "#4169e1",
     borderColor: "#4169e133",
     bgColor: "#080f2a",
+  },
+  {
+    label: "Supabase",
+    color: "#3ecf8e",
+    borderColor: "#3ecf8e33",
+    bgColor: "#05190f",
+  },
+  {
+    label: "Stripe",
+    color: "#8b85ff",
+    borderColor: "#635bff33",
+    bgColor: "#0b0920",
   },
   {
     label: "GraphQL",
@@ -170,10 +190,27 @@ export const skills: Skill[] = [
 
 export const experiences: Experience[] = [
   {
+    company: "Stampline",
+    location: "Remote",
+    role: "Lead Full-Stack Engineer",
+    period: "Jun 2026 — Present",
+    description:
+      "Stampline is an AI personalized direct mail platform for B2B teams. I own the product end to end, from database schema and auth through billing, AI card writing and print fulfillment.",
+    bullets: [
+      "Shipped V1 on Next.js 16 and Supabase Postgres, with row level security covering both individual and team accounts",
+      "Built a Claude powered pipeline that researches a recipient's company and drafts the card copy, with models and prompts configurable from the database",
+      "Integrated the IgnitePost fulfillment API for robot handwritten cards, including artwork generation and delivery status mapping",
+      "Made Stripe webhooks the source of truth for subscription and card credit state across Checkout, upgrades and the customer portal",
+      "Added QR tracking on every card to capture engagement events, instrumented with Sentry and PostHog",
+    ],
+    tags: ["Next.js", "TypeScript", "Supabase", "Claude API", "Stripe"],
+    current: true,
+  },
+  {
     company: "Blooming Box Gifts LLC",
     location: "Dubai, Remote",
     role: "Lead Full-Stack Developer",
-    period: "Jun 2024 — Present",
+    period: "Jun 2024 — Jun 2026",
     description:
       "Improved Online Gift Platform performance by 30%, reduced AWS infrastructure costs by 15%, and led new platform version launch resulting in 20% user engagement increase.",
     bullets: [
@@ -183,7 +220,6 @@ export const experiences: Experience[] = [
       "Developed a direct feed API for Tabby to improve marketing efficiency",
     ],
     tags: ["React", "Node.js", "AWS", "Microservices", "MongoDB"],
-    current: true,
   },
   {
     company: "Toptal",
@@ -270,6 +306,22 @@ export const experiences: Experience[] = [
 
 export const projects: Project[] = [
   {
+    name: "Stampline",
+    description:
+      "AI personalized direct mail for B2B professionals. A rep picks a contact, Stampline researches the company and drafts the note, then a real handwritten card goes out in the mail carrying a QR code that reports back the moment it lands.",
+    badge: "V1 shipped in 3 months",
+    badgeColor: "violet",
+    tags: [
+      "Next.js 16",
+      "TypeScript",
+      "Supabase",
+      "Claude API",
+      "Stripe",
+      "Tailwind CSS",
+    ],
+    url: "https://stampline.io",
+  },
+  {
     name: "BloomingBox",
     description:
       "At BloomingBox, I worked as a Full-Stack Developer where I built and scaled core eCommerce features using Next.js, React, and Node.js, supporting thousands of monthly users while improving platform stability. I enhanced frontend performance, reducing page load times by 30–40%, which contributed to better SEO rankings and increased user engagement.",
@@ -330,10 +382,18 @@ export const contactItems: ContactItem[] = [
     icon: "email",
   },
   {
-    label: "Phone",
-    value: "+923326065243",
+    label: "Phone · Germany",
+    value: "+49 152 16611049",
+    href: "tel:+4915216611049",
+    icon: "phone",
+    flag: "🇩🇪",
+  },
+  {
+    label: "Phone · Pakistan",
+    value: "+92 332 6065243",
     href: "tel:+923326065243",
     icon: "phone",
+    flag: "🇵🇰",
   },
   {
     label: "LinkedIn",
