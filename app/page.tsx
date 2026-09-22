@@ -16,9 +16,9 @@ export default function Home() {
       <main className="max-w-5xl mx-auto px-6 pt-24">
         <Hero />
         <Skills />
+        <Certifications />
         <Experience />
         <Projects />
-        <Certifications />
         <Contact />
       </main>
       <Footer />

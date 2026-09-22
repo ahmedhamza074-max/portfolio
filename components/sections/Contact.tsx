@@ -57,7 +57,7 @@ export function Contact() {
         </StatusBadge>
       </AnimateIn>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {contactItems.map((item, i) => (
           <AnimateIn key={item.label} delay={i * 60}>
             <a
@@ -67,8 +67,15 @@ export function Contact() {
               className="group block bg-card border border-border rounded-xl p-5 hover:border-accent/20 hover:bg-[#1e2230] hover:-translate-y-0.5 transition-all duration-200"
             >
               {/* Icon wrapper */}
-              <div className="w-9 h-9 rounded-lg bg-[#1e2230] border border-border flex items-center justify-center mb-3 text-accent group-hover:bg-[#252a3a] group-hover:border-accent/30 transition-all duration-200">
-                {iconMap[item.icon]}
+              <div className="flex items-center gap-2 mb-3">
+                <div className="w-9 h-9 rounded-lg bg-[#1e2230] border border-border flex items-center justify-center text-accent group-hover:bg-[#252a3a] group-hover:border-accent/30 transition-all duration-200">
+                  {iconMap[item.icon]}
+                </div>
+                {item.flag && (
+                  <span className="text-lg leading-none" aria-hidden="true">
+                    {item.flag}
+                  </span>
+                )}
               </div>
               {/* Label */}
               <p className="text-xs text-text-dim font-mono mb-1">{item.label}</p>

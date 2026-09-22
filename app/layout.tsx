@@ -49,6 +49,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        {/* Proxima Nova — used by the Toptal badge */}
+        <link rel="stylesheet" href="https://use.typekit.net/kmj5qkr.css" />
+      </head>
       <body
         className={`${syne.variable} ${dmSans.variable} ${dmMono.variable} font-body bg-bg text-text min-h-screen`}
       >
