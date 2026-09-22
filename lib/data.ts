@@ -54,7 +54,7 @@ export const heroDetails: HeroDetails = {
   statusLabel: "Available for opportunities in Germany",
   name: "Hamza Ahmed",
   title: "Senior Full Stack Developer",
-  description: "10+ years building scalable web applications with React, Node.js and modern cloud infrastructure. AWS Certified. Based in Pakistan —",
+  description: "10+ years building scalable web applications with React, Node.js and modern cloud infrastructure. AWS Certified. ",
   subText: "based in Germany.",
   contactMeHref: "mailto:ahmed.hamza074@gmail.com"
 }
