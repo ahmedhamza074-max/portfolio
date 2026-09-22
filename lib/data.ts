@@ -55,7 +55,7 @@ export const heroDetails: HeroDetails = {
   name: "Hamza Ahmed",
   title: "Senior Full Stack Developer",
   description: "10+ years building scalable web applications with React, Node.js and modern cloud infrastructure. AWS Certified. ",
-  subText: "based in Germany.",
+  subText: "Based in Germany.",
   contactMeHref: "mailto:ahmed.hamza074@gmail.com"
 }
 
