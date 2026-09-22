@@ -23,7 +23,7 @@ const dmMono = DM_Mono({
 export const metadata: Metadata = {
   title: "Hamza Ahmed — Full Stack Developer",
   description:
-    "10+ years building scalable web applications with React, Node.js and modern cloud infrastructure. AWS Certified. Based in Pakistan — relocating to Germany.",
+    "10+ years building scalable web applications with React, Node.js and modern cloud infrastructure. AWS Certified. Based in Germany.",
   keywords: [
     "Full Stack Developer",
     "React",
@@ -31,7 +31,6 @@ export const metadata: Metadata = {
     "Next.js",
     "TypeScript",
     "AWS",
-    "Pakistan",
     "Germany",
   ],
   authors: [{ name: "Hamza Ahmed" }],
